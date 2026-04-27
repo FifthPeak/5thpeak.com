@@ -735,7 +735,9 @@ footer.footer-slim .sep { margin: 0 0.6rem; color: var(--rule); }
   .brand .wordmark { font-size: 1.5rem; }
   .hero { padding: 9.5rem 1.2rem 3.5rem; }
   .page-header { padding: 9.5rem 1.2rem 3rem; }
+  .hero h1 { font-size: clamp(2.4rem, 11vw, 3.4rem); line-height: 1.08; }
   .hero-cta { flex-direction: column; gap: 1.2rem; }
+  .scroll-cue { display: none; }     /* desktop affordance; phones know to scroll */
   .footer-bottom { gap: 0.4rem; text-align: center; }
 }
 
