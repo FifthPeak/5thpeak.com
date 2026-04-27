@@ -12,6 +12,10 @@ Cormorant_Garamond/
 
 # Tuning utilities (delete if regenerated)
 _wordmark-preview.html
+_brand-sub-preview.html
+
+# Local-only operational notes (private — never commit)
+INFRASTRUCTURE.md
 
 # Editor / IDE
 .vscode/
