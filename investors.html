@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investor Login — 5thPeak</title>
+<meta name="description" content="5thPeak investor portal sign-in.">
+<meta name="theme-color" content="#f3efe7">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://www.5thpeak.com/investors.html">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav aria-label="Primary">
+  <div class="brand">
+    <a href="/" class="wordmark" aria-label="5thPeak — Home">5<span class="th">th</span>Peak</a>
+    <span class="brand-sub">Est. Dallas</span>
+  </div>
+  <div class="nav-links">
+    <a href="/approach.html">Approach</a>
+    <a href="/principals.html">Principals</a>
+    <a href="/investors.html" aria-current="page" class="current">Investors</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="login-wrap">
+    <div class="login-card">
+      <span class="mono-label">— Investor Portal</span>
+      <h1>Sign <em>in</em>.</h1>
+      <p class="helper">
+        Access your statements, distributions, and asset reporting.
+      </p>
+
+      <!--
+        Investor portal will eventually live at portal.5thpeak.com (separate subdomain).
+        Until then this is a stub. When the portal is wired, change action to the
+        portal sign-in endpoint and remove this comment.
+      -->
+      <form action="#" method="post" autocomplete="on">
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="username">
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn-primary">Sign In <span aria-hidden="true">→</span></button>
+      </form>
+
+      <div class="extra">
+        <a href="/contact.html?subject=password-reset">Forgot password</a>
+        <span style="color: var(--rule);" aria-hidden="true">·</span>
+        <a href="/contact.html?subject=portal-access">Need access</a>
+      </div>
+    </div>
+
+    <a href="/" class="login-back"><span aria-hidden="true">←</span> Return to 5thPeak</a>
+  </section>
+
+</main>
+
+<footer class="footer-slim">
+  <a href="/">5thPeak</a>
+  <span class="sep">·</span>
+  <a href="mailto:info@5thpeak.com">info@5thpeak.com</a>
+  <span class="sep">·</span>
+  <span>Dallas, Texas</span>
+</footer>
+
+</body>
+</html>

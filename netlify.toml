@@ -1,0 +1,25 @@
+# Netlify build configuration for 5thpeak.com
+# Static site — no build step required.
+
+[build]
+  publish = "."
+
+# Long cache on static assets, short cache on HTML so content edits ship fast.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+# Security headers (sensible baseline; tighten CSP if you add 3p scripts).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"

@@ -1,0 +1,33 @@
+# macOS / Windows system files
+.DS_Store
+Thumbs.db
+
+# Google Drive shortcuts (not part of the deploy)
+*.gdoc
+*.gsheet
+*.gslides
+
+# Brand source assets — kept locally, not deployed
+Cormorant_Garamond/
+
+# Tuning utilities (delete if regenerated)
+_wordmark-preview.html
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Netlify CLI
+.netlify/
+
+# Environment variables (defensive — shouldn't be any in a static site)
+.env
+.env.*
+!.env.example
+
+# Node tooling (defensive — no build today, but if added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*

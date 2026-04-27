@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — 5thPeak</title>
+<meta name="description" content="Reach 5thPeak in Dallas. For operating partners, peers, and inquiries.">
+<meta name="theme-color" content="#f3efe7">
+<link rel="canonical" href="https://www.5thpeak.com/contact.html">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="5thPeak">
+<meta property="og:title" content="Contact — 5thPeak">
+<meta property="og:description" content="For operating partners, peers, and inquiries.">
+<meta property="og:url" content="https://www.5thpeak.com/contact.html">
+<meta property="og:image" content="https://www.5thpeak.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — 5thPeak">
+<meta name="twitter:description" content="For operating partners, peers, and inquiries.">
+<meta name="twitter:image" content="https://www.5thpeak.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav aria-label="Primary">
+  <div class="brand">
+    <a href="/" class="wordmark" aria-label="5thPeak — Home">5<span class="th">th</span>Peak</a>
+    <span class="brand-sub">Est. Dallas</span>
+  </div>
+  <div class="nav-links">
+    <a href="/approach.html">Approach</a>
+    <a href="/principals.html">Principals</a>
+    <a href="/investors.html">Investors</a>
+    <a href="/contact.html" aria-current="page" class="current">Contact</a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="page-header">
+    <div class="page-header-inner">
+      <span class="mono-label">— The Firm</span>
+      <h1>Contact.</h1>
+      <p class="page-lede">
+        For operating partners, peers, and inquiries. We respond to messages we can
+        help with.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-grid">
+
+    <div class="contact-info">
+      <h2>Where to find us</h2>
+
+      <div class="contact-info-block">
+        <div class="label">Address</div>
+        <p>5925 Forest Ln, Ste. 410</p>
+        <p>Dallas, Texas 75230</p>
+      </div>
+
+      <div class="contact-info-block">
+        <div class="label">Email</div>
+        <a href="mailto:info@5thpeak.com">info@5thpeak.com</a>
+      </div>
+
+      <div class="contact-info-block">
+        <div class="label">Telephone</div>
+        <a href="tel:+12143081315">214.308.1315</a>
+      </div>
+
+      <div class="contact-info-block">
+        <div class="label">LinkedIn</div>
+        <a href="https://www.linkedin.com/company/5thpeak/" target="_blank" rel="noopener">linkedin.com/company/5thpeak</a>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <span class="mono-label">— Inquiries</span>
+      <h3>Send a note.</h3>
+      <p class="helper">
+        Operators, sponsors, and peers — tell us what you&rsquo;re working on. We read
+        every message.
+      </p>
+
+      <!--
+        Netlify Forms wiring:
+          - name="contact" registers the form in the Netlify dashboard
+          - data-netlify="true" enables the built-in form handler
+          - netlify-honeypot adds a hidden bot-trap field
+          - hidden input "form-name" is required for AJAX/SPA cases (harmless otherwise)
+        After deploy, submissions appear at app.netlify.com → Forms.
+        Set up an email notification at: Site settings → Forms → Form notifications.
+      -->
+      <form name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/?submitted=true">
+        <input type="hidden" name="form-name" value="contact">
+        <p hidden>
+          <label>Don&rsquo;t fill this out if you&rsquo;re human: <input name="bot-field"></label>
+        </p>
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="firm">Firm or Affiliation</label>
+          <input type="text" id="firm" name="firm" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" class="wordmark">5<span class="th">th</span>Peak</a>
+      <p class="footer-tagline">
+        A relationship-based investment office deploying principal capital — most often
+        in energy and real estate, and selectively in adjacent opportunities.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Office</h4>
+      <p>5925 Forest Ln, Ste. 410</p>
+      <p>Dallas, Texas 75230</p>
+      <a href="mailto:info@5thpeak.com">info@5thpeak.com</a>
+      <a href="tel:+12143081315">214.308.1315</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="https://www.linkedin.com/company/5thpeak/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/investors.html">Investor Login</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 5THPEAK · ALL RIGHTS RESERVED</span>
+    <span>DALLAS · TEXAS</span>
+  </div>
+</footer>
+
+</body>
+</html>
