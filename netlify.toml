@@ -4,16 +4,30 @@
 [build]
   publish = "."
 
-# Long cache on static assets, short cache on HTML so content edits ship fast.
+# Cache strategy: revalidate-on-each-request for everything.
+# Static assets (CSS/PNG/SVG) get an ETag-based revalidation, so browsers
+# still get 304 Not Modified responses (no re-download), but they always
+# check for fresh versions. This avoids the "Safari serves week-old CSS"
+# problem that immutable + 1-year max-age caused.
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/*.html"
   [headers.values]
-    Cache-Control = "public, max-age=300, must-revalidate"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
 
 # Security headers (sensible baseline; tighten CSP if you add 3p scripts).
 [[headers]]
